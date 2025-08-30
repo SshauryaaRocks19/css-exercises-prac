@@ -4,7 +4,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+
+
 }
 
 .header {
@@ -33,8 +35,7 @@ body {
   background: royalblue;
   box-sizing: border-box;
   display: flex;
-  flex: 1 0 auto;
-  width: 300px;
+  flex-shrink: 0;
   padding: 16px;
 }
 
@@ -42,8 +43,9 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  display: flex;
-  
+  padding: 16px;
+  width: 300px;
+
 
 }
 
@@ -56,10 +58,20 @@ a{
 
 ul{
   list-style: none;
+  margin:0;
+  padding: 0;
 }
 
 .cardsec{
+  padding: 48px;
   display: flex;
-  justify-content: center;
-  
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+
+.container{
+  display: flex;
+  flex: 1;
+
 }
